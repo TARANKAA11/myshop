@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.welcome {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 250px) 1fr;
+
+  background-image: url("images/Background.jpg");
+  background-size: cover;
+
+  grid-template-rows: 140px;
+
+  height: 100vh;
+}
+.main {
+}
+header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 10px 20px;
+}
+nav {
+  height: 100%;
+}
+#logo {
+  height: 100%;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.menu li {
+  margin: 0 25px;
+  font-size: larger;
+  text-shadow: 0 0 5px black;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/-2;
+}
+
+.banner p {
+  margin: 25px 0;
+}
+.banner a {
+  padding: 5px 25px;
+  background-color: red;
+  font-weight: 800;
+}
+
+.clothes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/-2;
+}
+.clothes .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+.clothes .clothes-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.clothes-menu .item {
+    display: grid;
+}
+.clothes-menu .item img {
+    width: 250px;
+}
+
+.clothes-menu .item p{
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+    color: bisque;
+    text-shadow: 0 0 5px black;
+    font-size: larger;
+    font-weight: 500;
+}

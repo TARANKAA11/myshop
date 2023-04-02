@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.welcome {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 250px) 1fr;
+  background-image: url("https://c8.alamy.com/comp/2CR2D7D/indian-programmer-mohan-sahadevan-of-datango-software-application-developing-company-poses-in-his-office-in-berlin-august-3-2011-when-indian-programmer-mohan-sahadevan-first-tried-to-quit-his-job-at-german-engineering-giant-siemens-to-join-a-berlin-software-company-he-was-told-his-work-permit-would-be-invalid-and-he-would-have-to-leave-germany-to-go-with-feature-bc-germany-labourimmigration-reutersfabrizio-bensch-germany-tags-employment-business-2CR2D7D.jpg");
+  background-size: cover;
+  grid-template-rows: 140px;
+  height: 50vh;
+}
+header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 10px 20px;
+}
+nav {
+  height: 100%;
+}
+#logo {
+  height: 100%;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.menu li {
+  margin: 0 25px;
+  font-size: larger;
+  text-shadow: 0 0 5px black;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/-2;
+}
+
+.sale{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 250px) 1fr;  
+}
+.disclaimer{
+    grid-column: 2/-2;
+}
+.items{
+    margin: 20px 0;
+    grid-column: 2/-2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.item img{
+    width: 100%;
+}
+.item a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 5%;
+    width: 50%;
+    text-align: center;
+}
+.item a:hover{
+    color: black;
+    background-color: gray;
+}
